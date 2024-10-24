@@ -1,3 +1,4 @@
+let btn_sample = document.getElementById("sample");
 let btn_compute = document.getElementById("btn-compute");
 let btn_clear = document.getElementById("btn-clear");
 btn_clear.disabled = true;
@@ -51,3 +52,7 @@ function categorizeBMI(bmi) {
 
   return category;
 }
+
+btn_sample.addEventListener("click", () => {
+  document.getElementById("sample_data").classList.toggle("hide");
+});

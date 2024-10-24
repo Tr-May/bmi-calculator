@@ -15,14 +15,51 @@
       .text-center {
         text-align: center;
       }
+      .hide {
+        display: none;
+      }
+      .card {
+        border-bottom: 1px dashed #000;
+      }
     </style>
   </head>
   <body>
     <h1 class="text-center">BMI Calculator</h1>
+    <input type="button" value="Sample Data" id="sample" />
+    <div id="sample_data" class="hide">
+      <div class="card">
+        <h3>Underweight</h3>
+        <p>Weight : 45 kg</p>
+        <p>Height : 1.7 m</p>
+        <p>Expected BMI : 15.6</p>
+        <p>Expected Category : Underweight</p>
+      </div>
+      <div class="card">
+        <h3>Normal Weight</h3>
+        <p>Weight : 65 kg</p>
+        <p>Height : 1.75 m</p>
+        <p>Expected BMI : 21.2</p>
+        <p>Expected Category : Normal weight</p>
+      </div>
+      <div class="card">
+        <h3>Overweight</h3>
+        <p>Weight : 85 kg</p>
+        <p>Height : 1.75 m</p>
+        <p>Expected BMI : 27.8</p>
+        <p>Expected Category : Overweight</p>
+      </div>
+      <div class="card">
+        <h3>Obesity</h3>
+        <p>Weight : 105 kg</p>
+        <p>Height : 1.75 m</p>
+        <p>Expected BMI : 34.3</p>
+        <p>Expected Category : Obesity</p>
+      </div>
+    </div>
     <form action="">
       <div>
         <label for="weight" class="form-label">Weight (in kg)</label>
-        <input type="number" name="" id="weight"/>
+        <input type="number" name="" id="weight" />
       </div>
       <div>
         <label for="height" class="form-label">Height (in meter)</label>

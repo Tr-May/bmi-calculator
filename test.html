@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      p {
+        color: white;
+      }
+      #div1 {
+        margin-top: 10px;
+        height: 50px;
+        background-color: brown;
+      }
+      #div2 {
+        margin-top: 10px;
+        height: 50px;
+        background-color: olive;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+
+    <input type="radio" name="type" id="show_div1" /> Standard
+    <input type="radio" name="type" id="show_div2" /> Metrics
+
+    <div id="div1">
+      <p>form with height in feet and inches, and weight in pounds</p>
+    </div>
+    <div id="div2" class="hidden">
+      <p>form with height in meters, and weight in kilograms</p>
+    </div>
+
+    <script>
+      let show_div1 = document.getElementById("show_div1");
+      let show_div2 = document.getElementById("show_div2");
+
+      let div1 = document.getElementById("div1");
+      let div2 = document.getElementById("div2");
+
+      show_div1.addEventListener("click", () => {
+        div1.classList.remove("hidden");
+        div2.classList.add("hidden");
+      });
+
+      show_div2.addEventListener("click", () => {
+        div1.classList.add("hidden");
+        div2.classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>
