@@ -1,3 +1,19 @@
+let show_standard = document.getElementById("show_standard");
+let show_metrics = document.getElementById("show_metrics");
+
+let standard_form = document.getElementById("standard");
+let metrics_form = document.getElementById("metrics");
+
+show_standard.addEventListener("click", () => {
+  standard.classList.remove("hide");
+  metrics.classList.add("hide");
+});
+
+show_metrics.addEventListener("click", () => {
+  standard.classList.add("hide");
+  metrics.classList.remove("hide");
+});
+
 let btn_sample = document.getElementById("sample");
 let btn_compute = document.getElementById("btn-compute");
 let btn_clear = document.getElementById("btn-clear");
